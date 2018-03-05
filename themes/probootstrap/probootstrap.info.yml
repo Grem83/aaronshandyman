@@ -1,0 +1,19 @@
+name: ProBootstrap
+type: theme
+description: The lighter and faster Bootstrap 4 subtheme for Drupal 8
+package: ProBootstrapPackage
+core: 8.x
+libraries:
+  - probootstrap/global-library
+
+component-libraries:
+  components:
+    paths:
+      - components
+
+base theme: stark
+
+regions:
+  header: Header
+  content: Content
+  footer: Footer

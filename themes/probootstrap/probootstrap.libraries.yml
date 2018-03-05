@@ -1,0 +1,7 @@
+global-library:
+   css:
+    theme:
+      assets/style.css: {}
+   js:
+      assets/style.js: {}
+

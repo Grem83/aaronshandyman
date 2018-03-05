@@ -1,0 +1,35 @@
+probootstrap.xs:
+  label: xs
+  mediaQuery: '(max-width: 575px)'
+  weight: 0
+  multipliers:
+    - 1x
+    - 2x
+probootstrap.sm:
+  label: sm
+  mediaQuery: '(min-width: 576px) and (max-width: 767px)'
+  weight: 1
+  multipliers:
+    - 1x
+    - 2x
+probootstrap.md:
+  label: md
+  mediaQuery: '(min-width: 768px) and (max-width: 991px)'
+  weight: 1
+  multipliers:
+    - 1x
+    - 2x
+probootstrap.lg:
+  label: lg
+  mediaQuery: '(min-width: 992px) and (max-width: 1199px)'
+  weight: 1
+  multipliers:
+    - 1x
+    - 2x
+probootstrap.xl:
+  label: xl
+  mediaQuery: '(min-width: 1200px)'
+  weight: 1
+  multipliers:
+    - 1x
+    - 2x
