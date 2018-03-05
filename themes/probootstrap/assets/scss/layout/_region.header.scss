@@ -1,0 +1,10 @@
+header[role="header"] {
+  background: $white;
+
+  .container {
+    @include media-breakpoint-down(sm) {
+      max-width: 100%;
+    }
+  }
+
+}

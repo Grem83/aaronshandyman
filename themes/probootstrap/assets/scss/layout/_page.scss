@@ -1,0 +1,14 @@
+// Page Layout
+// -----------------------------------------------------------------------------
+html {
+  position: relative;
+  min-height: 100%;
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    &.page--front {
+      background: $greyClear;
+    }
+  }
+}

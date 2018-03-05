@@ -1,0 +1,15 @@
+// Styles for blocks.
+// -----------------------------------------------------------------------------
+.block-content--blocfooterlogo {
+  background: url("images/logo-blanc.svg") no-repeat -5px 0;
+  background-size: 280px;
+  @include media-breakpoint-up(sm) {
+    background-size: 310px;
+  }
+  p {
+    color: $greyMedium;
+    font-family: "robotoregular";
+    font-size: 12px;
+    padding-top: 60px;
+  }
+}

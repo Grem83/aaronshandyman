@@ -1,0 +1,35 @@
+.block-content--warning {
+  background: $orangeMedium;
+  height: 51px;
+  width: 51px;
+  opacity: 1;
+  @include transition(all 0.6s);
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  p {
+    margin: 0;
+
+    a {
+      display: inline-flex;
+      vertical-align: top;
+      height: 51px;
+      width: 51px;
+      color: transparent;
+      padding: 9px;
+
+      &::before {
+        content: "";
+        display: table;
+        vertical-align: top;
+        height: 100%;
+        width: 100%;
+        @include iconSvg("images/icon-urgence.svg", $white, 32px);
+      }
+
+    }
+  }
+
+}

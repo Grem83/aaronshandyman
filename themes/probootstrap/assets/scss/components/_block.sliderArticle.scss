@@ -1,0 +1,80 @@
+.block--slider-article {
+  background: $greyClear;
+
+  .block__title {
+    font-size: 25px;
+    color: $blueDark;
+    margin-bottom: 1.5rem;
+  }
+
+  .node {
+    padding: 0 1rem;
+    font-size: 12px;
+
+    .node__content {
+      background: $greenMedium;
+      color: $white;
+      padding-bottom: 2rem;
+
+      @include media-breakpoint-up(sm) {
+          min-height: 384px;
+      }
+      @include media-breakpoint-up(md) {
+          min-height: 398px;
+      }
+      @include media-breakpoint-up(lg) {
+          min-height: 430px;
+      }
+
+      img {
+        max-width: 100%;
+      }
+    }
+
+    h5 {
+      font-size: 30px;
+
+      a {
+        color: $white;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+
+    .link-more a {
+      @include buttonRounded($white, $blueDark);
+    }
+
+    &--description {
+      font-size: 14px;
+    }
+  }
+
+  .slick {
+    position: relative;
+
+    .slick-arrow {
+      position: absolute;
+      top: 50%;
+      color: transparent;
+      border: 0;
+      height: 57px;
+      width: 19px;
+      cursor: pointer;
+      outline: none;
+
+      &.slick-prev {
+        left: -3%;
+        background: url("images/arrow-prev.png") no-repeat center center;
+      }
+
+      &.slick-next {
+        right: -3%;
+        background: url("images/arrow-next.png") no-repeat center center;
+      }
+    }
+  }
+
+}

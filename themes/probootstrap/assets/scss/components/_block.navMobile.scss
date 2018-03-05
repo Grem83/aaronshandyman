@@ -1,0 +1,43 @@
+.nav-mobile {
+  background: $greenMedium;
+
+  &.block--main-menu {
+    background: $orangeMediumDark;
+  }
+
+  &-btn {
+    background: $white;
+    border-left: 1px solid $greenMedium;
+    overflow: hidden;
+    outline: none;
+
+    @include media-breakpoint-down(xs) {
+      max-width: 50px;
+    }
+
+    .basic__body {
+      p {
+        @include aspect-ratio(1, 1);
+        margin: 0;
+      }
+    }
+
+    button {
+      color: transparent;
+      padding: 0;
+      outline: none;
+
+      &::before {
+        content: '';
+        margin: 0.5rem;
+      }
+    }
+
+    &.block-content--btnmobilerecherche button::before {
+      @include iconSvg("images/icon-loupe.svg", $greenMedium, 30px);
+    }
+    &.block-content--btnmobilemainmenu button::before {
+      @include iconSvg("images/icon-menu.svg", $greenMedium, 30px);
+    }
+  }
+}

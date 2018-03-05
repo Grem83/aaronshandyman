@@ -1,0 +1,40 @@
+.block-search {
+
+  @include media-breakpoint-up(md) {
+    padding-top: 0.5rem;
+  }
+
+  form {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+
+    @include media-breakpoint-down(sm) {
+      padding: 1.5rem 0;
+    }
+
+    .form-group {
+      @include col(95%);
+      margin: 0;
+      padding-right: 1rem;
+    }
+
+    .form-actions {
+      @include aspect-ratio(1, 1);
+      @include col(5%);
+    }
+
+    .button {
+      @include iconSvg("images/icon-loupe.svg", $white, 30px);
+      @include text-hide();
+
+      @include media-breakpoint-up(md) {
+        @include iconSvg("images/icon-loupe.svg", $greenMedium, 30px);
+      }
+
+    }
+
+  }
+
+}

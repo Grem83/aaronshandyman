@@ -1,0 +1,58 @@
+.block-banner {
+  background: $orangeMediumDark;
+  font-size: 14px;
+  overflow: hidden;
+
+  img {
+    max-width: 100%;
+  }
+  @include media-breakpoint-up(sm) {
+    img {
+      max-width: inherit;
+    }
+  }
+
+  &--details {
+
+    h1 {
+      font-size: 40px;
+    }
+
+  }
+
+  &--description {
+    color: $blueDark;
+    margin-bottom: 30px;
+  }
+
+  &--links {
+    float: left;
+
+    .field__item {
+      margin: 0 !important;
+      display: -ms-inline-flexbox!important;
+      display: inline-flex!important;
+
+      a {
+        @include buttonRounded($white, $orangeMediumDark);
+      }
+    }
+  }
+
+  .addtoany_list {
+    float: right;
+    padding: 0.75rem 0;
+
+    > a {
+      @include iconSvg("images/icon-partage.svg", $white, 18px);
+
+      span {
+        background-color: transparent !important;
+      }
+
+      svg {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+// Styles for Menus and Navs
+// -----------------------------------------------------------------------------
+.block--social {
+  .nav {
+    a {
+      overflow: hidden;
+      margin-left: 2rem;
+      @include media-breakpoint-up(xl) {
+        margin-left: 3rem;
+      }
+      &.fa-facebook {
+        width: 19px;
+      }
+      &.fa-twitter {
+        width: 30px;
+      }
+      &.fa-youtube-play {
+        width: 32px;
+      }
+      &:hover {
+        text-decoration: none;
+      }
+      &::before {
+        margin-right: 10px;
+      }
+    }
+    li:first-child a {
+      margin: 0;
+    }
+  }
+}

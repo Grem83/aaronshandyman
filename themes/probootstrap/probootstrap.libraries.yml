@@ -1,7 +1,11 @@
-global-library:
-   css:
+base:
+  version: VERSION
+  css:
     theme:
-      assets/style.css: {}
-   js:
-      assets/style.js: {}
-
+      assets/probootstrap.style.min.css: {}
+  js:
+    assets/probootstrap.script.min.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/drupal

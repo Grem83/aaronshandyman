@@ -1,0 +1,15 @@
+// Styles for blocks.
+// -----------------------------------------------------------------------------
+.block--hemophilia-branding {
+  max-height: 48px;
+  @include media-breakpoint-up(sm) {
+    max-height: inherit;
+  }
+
+  img {
+    width: 100%;
+    @include media-breakpoint-up(md) {
+      width: 310px;
+    }
+  }
+}

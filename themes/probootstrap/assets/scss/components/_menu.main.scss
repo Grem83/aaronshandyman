@@ -1,0 +1,151 @@
+// Styles for Menus and Navs
+// -----------------------------------------------------------------------------
+.block--main-menu {
+
+  .primary--menu {
+    position: relative;
+  }
+
+  .ultimenu {
+    position: inherit;
+    display: block;
+
+    &--main {
+      background: none;
+
+      @include media-breakpoint-down(sm) {
+        background: $orangeMediumDark;
+      }
+    }
+
+    &__item {
+      min-width: inherit;
+      width: inherit;
+
+      &:hover {
+        .ultimenu__flyout {
+          visibility: visible !important;
+          opacity: 1 !important;
+          display: block;
+          position: absolute;
+          width: 100%;
+          left: 0;
+        }
+      }
+    }
+
+    .caret {
+      @include media-breakpoint-up(md) {
+        display: none;
+      }
+    }
+  }
+
+  .ultimenu__link {
+    color: $white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    padding: 0.90rem 1.5rem;
+
+    &:hover {
+      background: $orangeMediumDark;
+    }
+  }
+
+  .ultimenu__flyout {
+    background: $orangeMediumDark;
+    color: $white;
+    @include border-radius(0);
+    box-shadow: none;
+    min-height: 300px;
+
+    .block {
+      width: 100%;
+    }
+
+    h3 {
+      font-size: 14px;
+      color: $greenMedium;
+      @include transition(all 0.6s);
+      cursor: pointer;
+      display: inline-flex;
+      border-right: 1px solid $orangeUltraLight;
+
+      &::after {
+        content: "";
+        display: inline-flex;
+        margin-left: 30px;
+        margin-top: 3px;
+        width: 6px;
+        height: 10px;
+        @include transition(all 0.6s);
+        @include iconSvg("images/arrow-main-menu.svg", $greenMedium, 18px);
+      }
+
+      &:hover {
+        color: $white;
+        &::after {
+          @include iconSvg("images/arrow-main-menu.svg", $white, 18px);
+        }
+      }
+
+      @include media-breakpoint-up(md) {
+        width: 30%;
+      }
+    }
+
+    .article--menu {
+      .view__row{
+        display: none;
+        float: right;
+
+        &.show__list{
+          display: block;
+
+          @include media-breakpoint-up(md) {
+            width: 70%;
+          }
+        }
+
+        .views-field-title {
+          font-size: 14px;
+          color: $greenMedium;
+          @include transition(all 0.6s);
+          padding-left: 2rem;
+          margin-bottom: 1rem;
+
+          &:hover {
+            color: $white;
+          }
+
+          @include media-breakpoint-up(md) {
+            display: block;
+            width: 50%;
+          }
+        }
+
+        .row-second{
+          display: none;
+          float: right;
+          position: absolute;
+          top: 0;
+          right: 0;
+
+          &.show__me {
+            display: block;
+          }
+
+          .views-field-title-1 a {
+            color: $white;
+            font-size: 20px;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+.button.button--ultimenu {
+  display: none !important;
+}

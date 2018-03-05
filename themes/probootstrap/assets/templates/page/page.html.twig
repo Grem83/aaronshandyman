@@ -1,0 +1,32 @@
+{#
+/**
+ * @file
+ * Template for the main page.
+ */
+#}
+<header role="header">
+  <div class="container d-flex flex-wrap align-items-center p-0 py-md-3">
+      {{ page.header }}
+  </div>
+</header>
+
+<nav class="navbar d-none d-md-block py-0" role="navigation">
+  <div class="container">
+      {{ page.navbar }}
+  </div>
+</nav>
+
+<main role="main">
+    {{ page.content }}
+</main>
+
+{% if page.footer %}
+  <footer role="footer">
+    <div class="bg-white">
+        {{ page.footerTop }}
+    </div>
+    <div class="container d-flex flex-wrap py-5">
+        {{ page.footer }}
+    </div>
+  </footer>
+{% endif %}

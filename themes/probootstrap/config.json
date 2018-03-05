@@ -1,0 +1,22 @@
+{
+  "name": "probootstrap",
+  "description": "A theme based on Radix.",
+  "css": {
+    "file" : "probootstrap.style.min.scss",
+    "src": [
+      "assets/scss/**/*.scss"
+    ],
+    "dest": "assets",
+    "includePaths": [
+      "./node_modules/bootstrap/scss"
+    ]
+  },
+  "js": {
+    "file" : "probootstrap.script.min.js",
+    "src": [
+      "assets/js/**/*.js",
+      "node_modules/bootstrap/dist/js/bootstrap.js"
+    ],
+    "dest": "assets"
+  }
+}

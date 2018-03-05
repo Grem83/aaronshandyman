@@ -1,0 +1,21 @@
+.bloc-sobi {
+  text-align: center;
+  @include media-breakpoint-up(sm) {
+    text-align: left;
+  }
+  &__body {
+    display: inline-flex;
+    background: url("images/logo-sobi.svg") no-repeat center right;
+    background-size: 90px;
+    padding-right: 110px;
+    p {
+      margin: 0.25rem 0;
+      font-family: robotoregular;
+      font-size: 12px;
+      text-transform: uppercase;
+      color: $greyDark;
+      border-right: 1px solid $greyDark;
+      padding-right: 0.75rem;
+    }
+  }
+}
